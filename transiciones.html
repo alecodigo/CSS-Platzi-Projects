@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MI Primera Animación Web</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ffdd00;
+        }
+        .container {
+            background: #0099e5;
+            display: flex;
+            align-items: center; 
+            position: absolute;
+            border: 5px solid black;
+            width: 50%;
+            height: 250px;
+        }
+        .pelota {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            color: white;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            border: 2px solid black;
+        }
+
+        .pelota.a {
+            background: #ff4c4c;
+            left: 15px;
+            top: 5px;
+            animation-name: ball-pink;
+            animation-duration: 3s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            /* transition: .3s; */
+        }
+        @keyframes ball-pink {
+            0% {
+                /* transform: translateY(0px) rotate(15deg); */
+                transform: translateY(0px) rotate(-10deg) scale(1);
+                
+            }
+            100% {
+                /* transform: translateY(5px) rotate(-15deg); */
+                transform: translateY(2px) rotate(15deg) scale(1.5);
+            }
+        }
+
+        .pelota.b {
+            background: #34bf49;
+            right: 25px;
+            animation-name: ball-green;
+            animation-duration: 3s;
+            animation-direction: alternate;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+        }
+        @keyframes ball-green {
+            0% {
+                /* transform: translateY(0px) rotate(15deg); */
+                transform: translateY(0px) rotate(10deg) scale(.5);
+                
+            }
+            50% {
+                /* transform: translateY(-5px) rotate(30deg); */
+                transform: translateY(2px) rotate(-15deg);
+            }
+           
+            100% {
+                /* transform: translateY(5px) rotate(-15deg); */
+                transform: translateY(-2px) rotate(10deg) scale(1);
+            }
+        }
+        .pelota.c {
+            border: initial;
+            background: rgba(0, 0, 0, .1);
+            left: 300px;
+            width: 15px;
+            height: 15px;
+            animation-name: bubble;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            animation-duration: 3s;
+            animation-direction: alternate;
+        }
+        .pelota.d {
+            border: initial;
+            background: rgba(0, 0, 0, .2);
+            left: 440px;
+            bottom: 50px;
+            width: 100px;
+            height: 100px;
+            animation-name: bubble;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            animation-duration: 4.5s;
+            animation-direction: alternate;
+        }
+        .pelota.e {
+            border: initial;
+            background: rgba(0, 0, 0, .1);
+            right: 300px;
+            bottom: 50px;
+            width: 70px;
+            height: 70px;
+            animation-name: bubble;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            animation-duration: 9s;
+            animation-direction: alternate;
+        }
+        .pelota.f {
+            border: initial;
+            background: rgba(0, 0, 0, .1);
+            right: 350px;
+            top: 50px;
+            width: 30px;
+            height: 30px;
+            animation-name: bubble;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            animation-duration: 6s;
+            animation-direction: alternate;
+        }
+        .pelota.g {
+            border: initial;
+            background: rgba(0, 0, 0, .1);
+            right: 520px;
+            top: 60px;
+            width: 90px;
+            height: 90px;
+            animation-name: bubble;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            animation-duration: 5s;
+            animation-direction: alternate;
+        }
+        .pelota.h {
+            border: initial;
+            background: rgba(0, 0, 0, .1);
+            right: 250px;
+            top: 50px;
+            width: 60px;
+            height: 60px;
+            animation-name: bubble;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            animation-duration: 9s;
+            animation-direction: alternate;
+        }
+        .pelota.i {
+            border: initial;
+            background: rgba(0, 0, 0, .1);
+            right: 400px;
+            top: 100px;
+            width: 20px;
+            height: 20px;
+            animation-name: bubble;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            animation-duration: 10s;
+            animation-direction: alternate;
+        }
+        @keyframes bubble {
+            0% {
+                transform: scale(0);
+            }
+            100% {
+                transform: scale(1.5);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="pelota a">
+            Hola Mundo!
+        </div>
+        <div class="pelota b">
+            Hello World!
+        </div>
+        <div class="pelota c">
+        </div>
+        <div class="pelota d">
+        </div>
+        <div class="pelota e">
+        </div>
+        <div class="pelota f">
+        </div>
+        <div class="pelota g">
+        </div>
+        <div class="pelota h">
+        </div>
+        <div class="pelota i">
+        </div>
+    </div>
+</body>
+</html>
