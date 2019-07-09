@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Modelo de Caja</title>
+    <style>
+        body {
+            background-color: #34bf49;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        h1 {
+            text-align:  center;
+            color: white;
+        }
+        .container {
+            background-color: #0099e5; 
+            border: 10px solid black;
+            width: 500px;
+            height: 500px;
+            margin: 20px;
+            padding: 20px;
+        }
+        .container2 {
+            background-color: #ff4c4c; 
+            border: 10px solid black;
+            width: 500px;
+            height: 500px;
+            margin: 20px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sin Box-Sizing: Border-Box</h1>
+    </div>
+    <div class="container2">
+        <h1>Con Box-Sizing: Border-Box</h1>
+    </div>
+</body>
+</html>
