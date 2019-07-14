@@ -9,7 +9,7 @@ body {
 .fondo {
     position: relative;
     width: 1000px;
-    height: 500px;
+    height: 550px;
     background: #328dd8;
     border: 5px solid black;
     box-sizing: border-box;
@@ -106,9 +106,91 @@ body {
 
 .nubes {
     background-image: url('./images/fondo1.png');
+    background-repeat: repeat-x;
     position: absolute;
     top: 5%;
     left: 0;
     width: 100%;
     height: 174px;
+    animation-name: nubes;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes nubes {
+    from {
+        background-origin: 0 0;
+    }
+    to {
+        background-position: -2000px 0;
+    }
+}
+
+.ciudad {
+    background-image: url('./images/ciudad.png');
+    background-repeat: repeat-x;
+    position: absolute;
+    top: 6%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation-name: ciudad;
+    animation-duration: 60s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes ciudad {
+    0% {
+        background-origin: 0 0;
+    }
+    100% {
+        background-position: -6392px 0;
+    }
+}
+
+.bici {
+    width: 145px;
+    height: 80px;
+    position: absolute;
+    bottom: 8%;
+    left: 50%;
+    text-align: center;
+}
+
+.bici .cuadro {
+    background-image: url('./images/marcobici.png');
+    width: 98px;
+    height: 56px;
+    display: inline-block;
+    z-index: auto;
+    position: relative;
+}
+
+.bici .rueda {
+    background-image: url('./images/llanta.png');
+    width: 55px;
+    height: 56px;
+    display: inline-block;
+    position: absolute;
+    animation: ruedas 1s linear infinite;
+}
+
+.rueda.trasera {
+    top: 30px;
+    left: 0;
+}
+.rueda.delantera {
+    top: 30px;
+    right: 0px;
+}
+
+@keyframes ruedas {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
