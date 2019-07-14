@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .box {
+            width: 500px;
+            height: 500px;
+            background: lightblue;
+            transition: all .8s ease .2s;
+            /* transition-property: ;
+            transition-duration: 2s;  */
+            border: 2px solid red;
+            padding: 10px;
+        }
+        .box:hover {
+            cursor: pointer;
+            background: lightgreen;
+            border: 6px solid black;
+            border-radius: 50%;
+            padding: 20px;
+        }
+        .box-1 {
+            width: 500px;
+            height: 500px;
+            background: lightblue;
+            transition: all .8s ease-in-out .8s;
+        }
+        .box-1:hover {
+            cursor: pointer;
+            border: 6px solid black;
+            border-radius: 50%;
+            padding: 20px;
+            background-image: url('platzi.png');
+        }
+        .box-2 {
+            width: 500px;
+            height: 500px;
+            background: lightblue;
+            /* transition: all .8s ease-in-out 2s; */
+            /* transition-property: ;
+            transition-duration: 2s;  */
+            border: 2px solid red;
+            padding: 10px;
+        }
+        .box-2:hover {
+            cursor: pointer;
+            border: 6px solid black;
+            border-radius: 50%;
+            padding: 20px;
+            background-image: url('platzi.png');
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box-1"></div>
+    <div class="box-2"></div>
+</body>
+</html>
