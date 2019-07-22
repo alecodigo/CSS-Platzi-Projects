@@ -14,10 +14,11 @@ body {
     border: 5px solid black;
     box-sizing: border-box;
     overflow: hidden;
+    transition: 5s;
 }
 .fondo-animation {
     animation-name: fondo;
-    animation-duration: 20s;
+    animation-duration: 25s;
     animation-iteration-count: infinite;
 }
 @keyframes fondo {
@@ -36,7 +37,7 @@ body {
 .sol {
     position: relative;
     top: 200px;
-    left: -100px;
+    left: -110px;
     background: #ffa500;
     width: 100px;
     height: 100px;
@@ -45,8 +46,8 @@ body {
 }
 .sol-animation {
     animation-name: sol;
-    animation-duration: 15s;
-    animation-iteration-count: infinite;
+    animation-duration: 14s;
+    animation-iteration-count: 1;
     animation-timing-function: linear;
 }
 
@@ -85,11 +86,11 @@ body {
 }
 .luna-animation {
     animation-name: luna;
-    animation-duration: 15s;
-    animation-iteration-count: infinite;
+    animation-duration: 12s;
+    animation-iteration-count: 1;
     animation-timing-function: linear;
     animation-direction: reverse;
-    animation-delay: 12s;
+    /* animation-delay: 12s; */
 }
 @keyframes luna {
     0% {

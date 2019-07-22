@@ -39,6 +39,19 @@
     const $stop = document.getElementById('stop');
     const $start = document.getElementById('start');
 
+    $sol.addEventListener('animationstart', event => {
+        // $sol.classList.remove('sol-animation')
+        $luna.classList.remove('luna-animation')
+    })
+    $sol.addEventListener('animationend', event => {
+        $luna.classList.add('luna-animation')
+        $sol.classList.remove('sol-animation')
+    })
+
+    $luna.addEventListener('animationend', event => {
+        $sol.classList.add('sol-animation')
+    })
+
     $start.addEventListener('click', (event) => {
         console.log('hola click');
         $sol.classList.add('sol-animation');
